@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConstrantLayer</string>
+    <string name="dca">DCA</string>
+    <string name="Flight">Flight\n</string>
+    <string name="SpaceStation">SpaceStation</string>
+    <string name="Rovers">Rovers</string>
+    <string name="MARS">MARS</string>
+    <string name="OneWay">OneWay</string>
+    <string name="Traveller">Traveller</string>
+    <string name="oneway">oneway\n</string>
+</resources>

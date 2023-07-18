@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".40" />"
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideHorizontal05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".05" />
+
+    <ImageView
+        android:id="@+id/ivFlight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/flights1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine60"
+        app:layout_constraintStart_toStartOf="@+id/guidLine40"
+        app:layout_constraintTop_toTopOf="@+id/guideHorizontal05" />
+
+    <TextView
+        android:id="@+id/tvFlight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Flight"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine60"
+        app:layout_constraintStart_toStartOf="@+id/guidLine40"
+        app:layout_constraintTop_toBottomOf="@+id/ivFlight" />
+
+    <ImageView
+        android:id="@+id/ivspacestation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spacestation"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine35"
+        app:layout_constraintStart_toStartOf="@+id/guidLine15"
+        app:layout_constraintTop_toTopOf="@+id/guideHorizontal05" />
+
+    <TextView
+        android:id="@+id/tvspacestation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SpaceStation"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine35"
+        app:layout_constraintStart_toStartOf="@+id/guidLine15"
+        app:layout_constraintTop_toBottomOf="@+id/ivspacestation" />
+
+    <ImageView
+        android:id="@+id/ivrovers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/rovers"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine85"
+        app:layout_constraintStart_toStartOf="@+id/guidLine65"
+        app:layout_constraintTop_toTopOf="@+id/guideHorizontal05" />
+
+    <TextView
+        android:id="@+id/tvrovers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Rovers"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine85"
+        app:layout_constraintStart_toStartOf="@+id/guidLine65"
+        app:layout_constraintTop_toBottomOf="@+id/ivrovers" />
+
+    <TextView
+        android:id="@+id/tvDCA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#09600C"
+        android:gravity="center"
+        android:text="@string/dca"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine47"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidLine15"
+        app:layout_constraintTop_toBottomOf="@+id/ivspacestation" />
+
+    <TextView
+        android:id="@+id/tvMARS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#09600C"
+        android:gravity="center"
+        android:text="@string/MARS"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:flow_firstHorizontalBias="0.0"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/guidLine85"
+        app:layout_constraintStart_toStartOf="@id/guidLine53"
+        app:layout_constraintTop_toTopOf="@+id/tvDCA" />
+
+    <TextView
+        android:id="@+id/tvCenter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="#F6FAF6"
+        android:elevation="10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine60"
+        app:layout_constraintStart_toStartOf="@id/guidLine40"
+        app:layout_constraintTop_toBottomOf="@+id/guidLine47" />
+
+    <TextView
+        android:id="@+id/oneaWay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#CA0E6F"
+        android:padding="5dp"
+        android:text="@string/OneWay"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine47"
+        app:layout_constraintStart_toStartOf="@+id/guidLine.05"
+        app:layout_constraintTop_toBottomOf="@+id/tvDCA" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="@string/oneway"
+        app:layout_constraintBottom_toBottomOf="@+id/oneaWay"
+        app:layout_constraintEnd_toEndOf="@+id/guidLine47"
+        app:layout_constraintTop_toTopOf="@+id/oneaWay"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#CA0E6F"
+        android:padding="5dp"
+        android:text="@string/Traveller"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/guidLine.05"
+        app:layout_constraintTop_toBottomOf="@id/oneaWay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
